@@ -30,7 +30,7 @@ obter_do_cache() {
 }
 
 carregar_cache() {
-    arquivo='/root/ApiUlekCheckuser/cache.json'
+    arquivo='/root/CheckUserMuleke/cache.json'
     if [[ -e "$arquivo" ]]; then
         cat "$arquivo" 2>/dev/null || echo "{}"
     else
@@ -40,7 +40,7 @@ carregar_cache() {
 
 salvar_cache() {
     cache=$1
-    arquivo='/root/ApiUlekCheckuser/cache.json'
+    arquivo='/root/CheckUserMuleke/cache.json'
     echo "$cache" >"$arquivo"
 }
 
@@ -69,7 +69,7 @@ verificar_processo() {
     fi
 }
 
-nome_do_script="/root/ApiUlekCheckuser/api.py"
+nome_do_script="/root/CheckUserMuleke/api.py"
 
 while true; do
     clear
@@ -113,7 +113,7 @@ while true; do
         ;;
     "2")
         clear
-        echo -e "Olá, esse é uma api para o multi-checkuser criado por @UlekBR"
+        echo -e "Olá, esse é uma api para o multi-checkuser criado por @TURBONET2023"
         read -p "Pressione a tecla enter para voltar ao menu"
         ;;
     "0")
